@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafetería Yossvante</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<a href="#contacto" class="ordenar-btn">☕ Ordenar ahora</a>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2 class="logo">Yossvante</h2>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul id="menuNav">
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#horario">Horario</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="datos.xml" target="_blank">Datos XML</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-texto fade-in">
+        <h1>Yossvante Café</h1>
+        <p>Café • Música • Arte</p>
+
+        <button onclick="location.href='#menu'" class="btn-principal">
+            Descubre nuestro menú
+        </button>
+    </div>
+</header>
+
+<main>
+
+<!-- MENÚ -->
+<section id="menu" class="seccion-cards fade-in">
+    <h2>Nuestro Menú</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="imagenes/latte.png">
+            <h3>Latte Borahae</h3>
+            <p>Café suave con cariño ARMY</p>
+        </div>
+
+        <div class="card">
+            <img src="imagenes/frappe.png">
+            <h3>Frappé Winter Bear</h3>
+            <p>Bebida fría especial</p>
+        </div>
+
+        <div class="card">
+            <img src="imagenes/coffe.png">
+            <h3>Café Scenery</h3>
+            <p>Dulce y cálido</p>
+        </div>
+    </div>
+
+    <!-- TABLA precios -->
+    <table>
+        <tr>
+            <th>Bebida</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Latte Borahae</td>
+            <td>$70</td>
+        </tr>
+        <tr>
+            <td>Frappé Winter Bear</td>
+            <td>$80</td>
+        </tr>
+        <tr>
+            <td>Café Scenery</td>
+            <td>$65</td>
+        </tr>
+    </table>
+
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria" class="galeria fade-in">
+    <h2>Momentos Yossvante</h2>
+
+    <div class="galeria-grid">
+        <img src="imagenes/cere.png">
+        <img src="imagenes/oso.png">
+        <img src="imagenes/matcha.png">
+        <img src="imagenes/sob.png">
+    </div>
+</section>
+
+<!-- HORARIO -->
+<section id="horario" class="ubicacion-horario fade-in">
+    <div class="horario">
+        <h2>Horario</h2>
+        <p>Lun–Vie: 08:00–19:00</p>
+        <p>Sáb–Dom: 09:00–20:00</p>
+    </div>
+
+    <div class="mapa">
+        <iframe
+            src="https://www.google.com/maps?q=31.7200523,-106.4213704&z=15&output=embed"
+            loading="lazy"></iframe>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contacto-central fade-in">
+    <h2>Contáctanos</h2>
+
+    <form class="form-contacto">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo" required>
+        <input type="text" placeholder="Asunto" required>
+        <textarea placeholder="Mensaje"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+</main>
+
+<div class="qr-flotante">
+    <img src="imagenes/qr.png">
+</div>
+
+<footer>
+    <div class="footer-contenido">
+        <div>
+            <h3>Yossvante Café</h3>
+            <p>WHAT IS YOUR LOVE SONG? ARIRANG</p>
+        </div>
+
+        <div>
+            <h3>Redes</h3>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>TikTok</p>
+        </div>
+
+        <div>
+            <h3>Pagos</h3>
+            <p>Visa</p>
+            <p>Mastercard</p>
+            <p>Efectivo</p>
+        </div>
+    </div>
+
+    <p class="copy">© 2026 Yossvante Café - proyecto estudiantil</p>
+</footer>
+
+<script>
+function toggleMenu(){
+    document.getElementById("menuNav").classList.toggle("mostrar");
+}
+</script>
+
+</body>
+</html>
